@@ -1,0 +1,139 @@
+header {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu-top-left {
+  display: flex;
+  align-items: center;
+}
+
+#menu-hamburger-icon {
+  height: 24px;
+  margin: auto 24px;
+
+}
+
+#menu-logo {
+  height: 20px;
+}
+
+#menu-search {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 615px;
+  display: flex;
+  align-items: center;
+}
+
+#menu-search-input {
+  height: 38px;
+  flex: 1;
+  outline: none;
+  border: 1px solid #CCCCCC;
+  border-right: 0;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #111;
+  padding: 10px 20px;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+#menu-search-input:focus {
+  caret-color: black;
+}
+
+#menu-search-button {
+  height: 38px;
+  width: 65px;
+  border-radius: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  outline: none;
+  border: 1px solid #CCCCCC;
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-search-button i {
+  color: #555555;
+}
+
+#menu-login {
+  width: 200px;
+  color: #065FD4;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+#menu-settings-icon {
+  color: #030303;
+  width: 24px;
+  text-align: start;
+
+}
+
+#menu-login-button {
+  flex: 1;
+  max-width: 150px;
+  font-weight: 600;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #CCCCCC;
+  border-radius: 30px;
+  margin-left: 15px;
+}
+
+#menu-user-icon {
+  font-size: 20px;
+}
+
+#menu-login-text {
+  margin-left: 10px;
+  font-size: 0.875rem;
+  white-space:nowrap;
+}
+
+@media (max-width: 530px) {
+  #menu-login {
+    justify-content: end;
+    width: fit-content;
+  }
+  #menu-login-button {
+    flex: 0;
+    border: none;
+    margin-left: 0;
+  }
+  #menu-user-icon {
+    margin: auto 10px;
+  }
+  #menu-login-text {
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  #menu-search {
+    display: flex;
+    justify-content: end;
+  }
+  #menu-search-input {
+    display: none;
+  }
+  #menu-search-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: end;
+  }
+}
