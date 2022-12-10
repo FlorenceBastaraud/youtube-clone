@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <title>YouTube</title>
@@ -12,11 +12,11 @@
   <link rel="stylesheet" href="assets/normalize.css">
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="stylesheet" href="assets/header.css">
+  <link rel="stylesheet" href="assets/sidebar.css">
 </head>
 <body>
 
   <header>
-
     <div id="menu-top-left">
       <img id="menu-hamburger-icon" src="assets/images/hamburger-menu-icon.svg" alt="Icon du menu hamburger">
       <img id="menu-logo" src="assets/images/youtube-logo.svg" alt="Logo Youtube">
@@ -24,27 +24,52 @@
     </div>
 
     <div id="menu-search">
-
       <input id="menu-search-input" type="search" placeholder="Rechercher">
       <span id="menu-search-button">
         <i class="fa-solid fa-magnifying-glass"></i>
+        <span class="tooltip">Rechercher</span>
       </span>
-
     </div>
 
     <div id="menu-login">
+      <div id="menu-settings-wrapper">
+        <i id="menu-settings-icon" class="fa-solid fa-ellipsis-vertical"></i>
+        <span class="tooltip">Paramètres</span>
+      </div>
 
-      <i id="menu-settings-icon" class="fa-solid fa-ellipsis-vertical"></i>
       <span id="menu-login-button">
         <i id="menu-user-icon" class="fa-regular fa-circle-user"></i>
         <span id="menu-login-text">Se connecter</span>
       </span>
 
     </div>
-      
   </header>
+
+  <nav id="sidebar">
+    <div class="sidebar-item">
+      <i class="fa-solid fa-house"></i>
+      <span class="sidebar-item-label">Accueil</span>
+    </div>
+    <div class="sidebar-item">
+      <i class="fa-solid fa-arrows-left-right-to-line"></i>
+      <span class="sidebar-item-label">Shorts</span>
+    </div>
+    <div class="sidebar-item">
+      <i class="fa-brands fa-youtube"></i>
+      <span class="sidebar-item-label">Abonnements</span>
+    </div>
+    <div class="sidebar-item">
+      <i class="fa-solid fa-bookmark"></i>
+      <span class="sidebar-item-label">Bibliothèque</span>
+    </div>
+    <div class="sidebar-item">
+      <i class="fa-solid fa-clock-rotate-left"></i>
+      <span class="sidebar-item-label">Historique</span>
+    </div>
+  </nav>
   
 
+  
   <script src="assets/main.js"></script>
 </body>
 </html>

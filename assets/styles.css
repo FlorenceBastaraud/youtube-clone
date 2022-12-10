@@ -8,4 +8,7 @@
 body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  padding-top: 80px;
+  padding-left: 100px;
+  height: 100vh;
 }
