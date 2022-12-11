@@ -150,13 +150,34 @@ header {
   display: block;
 }
 
-
-@media (max-width: 430px) {
+@media (max-width: 380px) {
   body {
     padding-top: 0;
   }
   header {
     position: static;
+    width: 100%;
+    overflow: hidden;
+    justify-content: start;
+  }
+  #menu-search {
+    flex: 0;
+  }
+  #menu-logo {
+    display: none;
+  }
+  #menu-search-button {
+    justify-content: start;
+  }
+  #menu-hamburger-icon {
+    margin: auto 2px;
+  }
+}
+
+
+@media (max-width: 430px) {
+  #menu-search, #menu-search-button, #menu-search-button i, #menu-login {
+    display: none;
   }
 }
 

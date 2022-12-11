@@ -1,0 +1,136 @@
+#shorts-grid {
+  border-top: 4px solid #E5E5E5;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+#shorts-heading {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+#shorts-heading i {
+  color: #FF0000;
+  font-size: 24px;
+  padding-left: 15px;
+}
+
+#shorts-heading span {
+  padding-left: 10px;
+  font-size: 1.30rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+}
+
+#shorts {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: 1rem;
+}
+
+.short-card-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.short-thumbnail img {
+  height: 290px;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 15px;
+}
+
+.short-details {
+  padding-top: 10px;
+}
+
+.short-infos {
+  display: flex;
+}
+
+.short-title {
+  flex: 1;
+  font-weight: 700;
+  font-size: 0.938rem;
+  line-height: 23px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  height: 45px;
+}
+
+.short-infos i {
+  visibility: hidden;
+  margin: 0 3px;
+}
+
+.short-stats {
+  color: #696666;
+  font-size: 0.890rem;
+  margin-bottom: 2px;
+}
+
+.short-card:hover .short-infos i {
+  visibility: visible;
+}
+
+@media (max-width: 1463px) {
+  .short-card-link:nth-last-child(-n+1) {
+    display: none;
+  }
+
+  #shorts {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 1293px) {
+  .short-card-link:nth-last-child(-n+2) {
+    display: none;
+  }
+
+  #shorts {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1124px) {
+  .short-card-link:nth-last-child(-n+3) {
+    display: none;
+  }
+
+  #shorts {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 953px) {
+  .short-card-link:nth-last-child(-n+4) {
+    display: none;
+  }
+
+  #shorts {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 711px) {
+  .short-card-link:nth-last-child(-n+5) {
+    display: none;
+  }
+
+  #shorts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 300px) {
+  .short-card-link:nth-last-child(-n+6) {
+    display: none;
+  }
+
+  #shorts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

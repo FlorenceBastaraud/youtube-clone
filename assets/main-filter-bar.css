@@ -3,7 +3,7 @@
   position: fixed;
   top: 55px;
   right: 1.3vw;
-  left: 5vw;
+  left: 4.7vw;
   background-color: #fff;
   height: 50px;
   display: flex;
@@ -49,5 +49,6 @@
   #filter-bar {
     display: none;
   }
+
 }
 

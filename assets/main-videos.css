@@ -1,5 +1,4 @@
 #videos-grid {
-  height: 300px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 15px;
@@ -43,6 +42,7 @@
 
 .video-title {
   font-weight: 700;
+  font-size: 0.938rem;
   line-height: 23px;
   margin-bottom: 5px;
 }
@@ -64,7 +64,11 @@
 @media (max-width: 1127px) {
   #videos-grid {
     grid-template-columns: repeat(3, 1fr);
-  }  
+  }
+  .video-card-link:nth-last-child(-n+2) {
+    display: none;
+  }
+
 }
 
 @media (max-width: 871px) {
