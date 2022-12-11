@@ -38,7 +38,7 @@
 
 @media (max-width: 1315px) {
   body {
-    padding-left: 0;
+    padding-left: 20px;
   }
   #sidebar {
     display: none;
