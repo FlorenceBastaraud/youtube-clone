@@ -53,6 +53,11 @@
   margin-bottom: 2px;
 }
 
+.video-settings {
+  margin-left: auto;
+  text-align: right;
+}
+
 .video-settings-icon i{
   display: none;
 }
@@ -77,7 +82,7 @@
   }  
 }
 
-@media (max-width: 495px) {
+@media (max-width: 550px) {
   #videos-grid {
     grid-template-columns: 1fr;
   }  
